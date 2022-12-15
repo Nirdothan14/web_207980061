@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #fffcf1;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aebda4;
+    color: #083d1f;
+    height: 70px;
+    width: 100%;
+
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-weight: bold;
+
+}
+.brand-title a{
+    color: #083d1f;
+    font-size: 35px;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #083d1f;
+    border-radius: 5px;
+}
+.brand-title :hover{
+    cursor: pointer;
+    background: none;
+    color: #4A2C2A;
+}
+.active,a:hover{
+    background: #083d1f;
+    transition: 0.5s;
+}
+.fa-brands{
+    size: 15px;
+    color: antiquewhite;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+@media (max-width: 1100px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        background: #aebda4;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+.start{
+    color: #083d1f;
+    font-size: 40px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-align: right;
+    font-weight: bold;
+    padding-top: 50px;
+    margin: 5px;
+
+}
+
+p{
+    float: top;
+    font-size: 30px;
+    text-align: right;
+    color: #aebda4;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+.feet{
+    height: 400px;
+    width: 40%;
+    margin-left: 350px;
+    border-radius: 10px;
+}
+
+span {
+    color: #083d1f;
+    font-size: 40px;
+    font-weight: bold;
+}
+.who-to{
+    color: #083d1f;
+    font-size: 40px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+    margin: 5px;
+}
+.start{
+    color: #083d1f;
+    font-size: 40px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-align: right;
+    font-weight: bold;
+    padding-top: 50px;
+    margin: 5px;
+
+}
+.block{
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.block h3 {
+    font-size: 18px;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #083d1f;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 70px;
+}
+.block span{
+    font-size: 25px;
+}
+.final{
+    float: right;
+    color: #083d1f;
+    font-size: 40px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-align: right;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 125px;
+
+}
+.finalp{
+    padding: 25px;
+    margin: 25px;
+    float: right;
+    text-align: right;
+}
+.details {
+    text-align: right;
+    margin: 100px;
+    padding: 150px;
+    color: #083d1f;
+    font-size: 25px;
+    font-weight: bold;
+}
+.details h2{
+    margin-top: 20vh;
+}
+.details button {
+    margin-top: 50px;
+    margin-right: 290px;
+    padding: 3%;
+    color: #fffcf5;
+    border-radius: 15px;
+    background-color:#ad926b;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.details a:hover{
+    transition: 0.5s;
+    background: none;
+}
+.details button:hover{
+    background: #4A2C2A;
+    color: #ad926b;
+    cursor: pointer;
+}
+
+@media screen and(max-width: 800px){
+
+    .details button{
+        width: auto;
+        position: center;
+    }
+    .details h2{
+        width: auto;
+        transition: none;
+        align-items: center;
+    }
+    .block p{
+        width: 10%;
+        display: flex;
+    }
+
+}

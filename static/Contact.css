@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #fffcf1;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aebda4;
+    color: #083d1f;
+    height: 70px;
+    width: 100%;
+
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-weight: bold;
+
+}
+.brand-title a{
+    color: #083d1f;
+    font-size: 35px;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #083d1f;
+    border-radius: 5px;
+}
+.brand-title :hover{
+    cursor: pointer;
+    background: none;
+    color: #4A2C2A;
+}
+.active,a:hover{
+    background: #083d1f;
+    transition: 0.5s;
+}
+.fa-brands{
+    size: 15px;
+    color: antiquewhite;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+@media (max-width: 1100px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        background: #aebda4;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/*content design*/
+.pic{
+    padding: 90px;
+    margin-left: 100px;
+    height: 650px;
+    float: left;
+
+}
+
+.container{
+    position: relative;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+#contact-section .container h2{
+    margin: 30px;
+    padding: 0px;
+    position: center;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #083d1f;
+    letter-spacing: 2px;
+}
+#contact-section .container p {
+    text-align: center;
+    size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin-left: auto;
+    padding-bottom: 3%;
+    color: #083d1f;
+    letter-spacing: 3px;
+}
+
+
+.contact-form i.fa-solid{
+    font-size: 22px;
+    padding: 2%;
+    background-color: #aebda4;
+    margin: 8%;
+    border: 8px solid #fffcf1;
+    color: #fffcf1;
+}
+.contact-form i.fa-solid:hover{
+    border: 1px solid #083d1f;
+}
+.info{
+    width: 90%;
+    font-size: 18px;
+    color: #083d1f;
+    letter-spacing: 2px;
+    margin: 2px;
+    padding: 2px;
+}
+input{
+    font-family: 'Rubik', sans-serif;
+    text-align: right;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    color: #083d1f;
+    background-color: #aebda4;
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    color: #083d1f;
+}
+textarea{
+    font-family: 'Rubik', sans-serif;  text-align: right;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    color: #083d1f;
+    background-color: #aebda4;
+    border: none;
+    outline: none;
+}
+textarea::placeholder{
+    color: #083d1f;
+}
+form button{
+    background-color: #083d1f;
+    color: #fffcf1;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    border: #aebda4;
+    border-radius: 3px;
+    width: 15%;
+    padding: 4px;
+    margin-bottom: 50px;
+}
+form button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px){
+
+    body{
+        min-width: 900px;
+        display: inline-grid;
+    }
+    .pic{
+        width: auto;
+        margin-left: 220px;
+        position: unset;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 25px;
+    }
+    .info{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .contact-form i.fa-solid{
+        margin-right: 5px;
+    }
+    #contact-form{
+        margin-top:  120px;
+        align-content: center;
+    }
+    #contact-form input{
+        width: 100%;
+    }
+    #contact-form textarea{
+        width: 100%;
+    }
+    #contact-form button{
+        width:50%;
+    }
+
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef&family=Poiret+One&family=Quicksand:wght@300&family=Roboto:wght@100&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/Registration.css">
+    <script src="https://kit.fontawesome.com/9a83fb674c.js" crossorigin="anonymous"></script>
+    <script  src="../static/Register.js" ></script>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="form-title">הרשמה כמנוי</h1>
+    <div id="message"></div>
+    <form id="contact_form">
+        <div class="main-user-info">
+            <div class="user-input-box">
+                <label >כתובת מייל</label>
+                <input type="text"
+                       id="email"
+                       name="Email1"
+                       placeholder="הכנס מייל" />
+            </div>
+            <div class="user-input-box">
+
+                <label>שם מלא</label>
+                <input type="text"
+                       id="fullname"
+                       name="fullname"
+                       placeholder="הכנס שם מלא" />
+            </div>
+            <div class="user-input-box">
+                <label for="Password">סיסמא</label>
+                <input type="text"
+                       id="Password"
+                       name="Password"
+                       placeholder="הכנס סיסמא"/>
+            </div>
+            <div class="user-input-box">
+                <label for="username">שם משתמש</label>
+                <input type="text"
+                       id="username"
+                       name="username"
+                       placeholder="הכנס שם משתמש"/>
+            </div>
+        </div>
+        <div class="gender-box">
+            <span class="gender-title">מין</span>
+            <div class="gender-category">
+                <input type="radio" name="Gender" id="male">
+                <label for="male">גבר</label>
+                <input type="radio" name="Gender" id="female">
+                <label for="female">אישה</label>
+                <input type="radio" name="Gender" id="other">
+                <label for="other">אחר</label>
+            </div>
+        </div>
+    </form>
+    <button onclick="RegValidation()"> צור מנוי </button>
+</div>
+
+
+</body>
+</html>
