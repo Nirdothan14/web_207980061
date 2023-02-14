@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alef&family=Poiret+One&family=Quicksand:wght@300&family=Roboto:wght@100&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/Log.css">
+</head>
+<body onload="return myGreet()">
+<div class="container">
+  <h1 class="label">התחברות</h1>
+  <div class="greet" id="greet"></div>
+  <form class="login_form" name="form">
+    <div class="font">שם משתמש</div>
+    <input autocomplete="off" type="text" name="user" placeholder="הכנס שם משתמש" required>
+    <div id="email_er">שם משתמש לא תקין נסה שוב</div>
+    <div class="font font2">סיסמא</div>
+    <input type="password" name="password" placeholder="הכנס סיסמא" required>
+    <div id="pass_er">סיסמא לא נכונה נסה שוב</div>
+
+    <div class="pass">
+      <a href="">שכחתי סיסמא <br></a>
+    </div>
+    <button onclick="login(event)">לכניסה</button>
+    <div class="pass2">
+      <a href="Registration.html">הרשמה כמנוי </a>
+    </div>
+    <a  class="back " href="main.html">חזרה לדף הבית<br></a>
+  </form>
+</div>
+<script src="../static/javaScript.js"></script>
+</body>
+</html>

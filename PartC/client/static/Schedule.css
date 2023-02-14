@@ -1,0 +1,106 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.fa-calendar{
+    color: #083d1f;
+
+}
+h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #083d1f;
+    font-weight: bold;
+    font-style: italic;
+}
+h2{
+    margin-bottom: 20px;
+    color: #083d1f;
+}
+.schedule-container{
+    background: linear-gradient( #aebda4, #fffcf5,#083d1f);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.days-container{
+    display: grid;
+    grid-template-columns: 60px repeat(7, 225px);
+    gap: 4px;
+}
+.time{
+    width: 50px;
+    height: 70px;
+    color: white;
+    background: #aebda4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.task{
+    background-color: white;
+    width: 220px;
+    min-height: 170px;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.cls{
+
+display: grid;
+
+grid-template-columns: 75px 40px 75px;
+
+justify-content: center;
+
+align-items: center;
+}
+.cls .cls-name {
+
+font-size: 11px;
+
+padding: 0;
+
+margin: 0;
+}
+.cls .cls-tutor {
+
+font-size: 12px;
+
+font-style: italic;
+}
+
+.cls .cls-btn{
+    color: #fffcf5;
+    transition: 0.4s;
+    background-color:#ad926b;
+    border: none;
+    cursor: pointer;
+}
+.cls .cls-btn:hover{
+    background: #4A2C2A;
+    color: #ad926b;
+}
+
+.cls .cancel {
+    font-size: 10px;
+    color: red;
+}
+
+.schedule-search {
+    color: black;
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+}

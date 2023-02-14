@@ -1,0 +1,66 @@
+.txt{
+    padding-top: 50px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #083d1f;
+    text-align: center;
+    align-content: center;
+
+}
+.txt span{
+    color: #aebda4;
+    font-size: 40px;
+}
+.treepic{
+    width: 70%;
+    width: 400px;
+    border-radius: 20px;
+}
+.txt-h{
+    color: #aebda4;
+    padding-top: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+.details {
+    padding-bottom: 200px;
+}
+.details button {
+    margin-top: 50px;
+    margin-left: 550px;
+    padding: 2%;
+    color: #fffcf5;
+    border-radius: 15px;
+    background-color:#ad926b;
+    font-family: rubik,"Roboto Light";
+    font-size: 20px;
+    font-weight: bold;
+}
+.details a:hover{
+    transition: 0.5s;
+    background: none;
+}
+.details button:hover{
+    background: #4A2C2A;
+    color: #ad926b;
+    cursor: pointer;
+}
+@media (max-width: 800px){
+    .txt{
+        font-size: 15px;
+    }
+    .txt span{
+        font-size: 20px;
+    }
+    .txt-h{
+        font-size: 15px;
+    }
+    .details .txt{
+        font-size: 15px;
+    }
+    .details a{
+        text-align: center;
+        align-content: center;
+        margin-right: 100px;
+    }
+}

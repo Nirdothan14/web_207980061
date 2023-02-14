@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #fffcf5;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    max-width: 450px;
+    background: rgba(100, 67, 57, 0.2);
+    padding: 20px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px rgba(26, 47, 31, 0.2);
+}
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: #fffcf5;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px #fffcf5;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label{
+    width: 90%;
+    text-align: right;
+    color: #fffcf5;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    margin: 5px 0;
+}
+.user-input-box input{
+    height: 40px;
+    text-align: right;
+    width: 90%;
+    border-radius: 7px;
+    background: #fffcf5;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.gender-title{
+    color: #fffcf5;
+    margin-left: 360px;
+    text-shadow: 2px 2px 2px black;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+.gender-category{
+    font-family: Tahoma;
+    font-size: 13px;
+    padding-top: 20px;
+    margin-left: 135px;
+    color: #fffcf5;
+}
+
+.gender-category label {
+    margin-left: 20px;
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn{
+    cursor: pointer;
+}
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.container button{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fffcf5;
+    background: rgba(108, 63, 50, 0.49);
+}
+.container button:hover{
+    background: #083d1f;
+    color: #fffcf5;
+    cursor: pointer;
+}
+
+#message{
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    color: #fffcf5;
+    background: rgba(255, 0, 0, 0.23);
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .container{
+        min-width: 280px;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: left;
+        width: 100%;
+    }
+    .main-user-info{
+        max-height: 400px;
+    }
+}
+
+
+
+
+

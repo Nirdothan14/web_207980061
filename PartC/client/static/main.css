@@ -1,0 +1,145 @@
+.header-text{
+    color: #083d1f;
+    text-align: center;
+    font-family: rubik;
+    margin-top: 5%;
+    font-size: 40px;
+
+}
+.header-text h1{
+    font-family: "Roboto Light" ;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.header-text span{
+    color:#aebda4;
+    font-weight: bold;
+}
+/*design for animation*/
+.wraper{
+    display: inline-flex;
+}
+.wraper .static{
+    font-size: 60px;
+    color: #083d1f;
+    font-weight: 400;
+}
+.wraper .dynamic-txt{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.dynamic-txt li{
+    color: #aebda4;
+    list-style: none;
+    font-size: 75px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 2s steps(10) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+.block h1 {
+    color: #4A2C2A;
+    text-align: center;
+}
+.block p {
+    padding-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ad926b;
+    text-align: right;
+}
+.block img{
+    width: 100%;
+    border-radius: 15px;
+}
+.reflex-pic{
+    height: 538px;
+}
+.main-contact h2{
+    text-align: center;
+    color: #ad926b;
+    font-size: 30px;
+    font-family: rubik;
+    margin-top: 50vh;
+}
+.main-contact button {
+    float: right;
+    font-family: rubik;
+    margin-top: 30px;
+    margin-right: 340px;
+    margin-bottom: 100px;
+    padding: 2%;
+    color: #4A2C2A;
+    border-radius: 15px;
+    background-color:#ad926b;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-contact button:hover{
+    cursor: pointer;
+    color: #ad926b;
+    background: #4A2C2A;
+
+}
+.toggle-btn{
+    position: absolute;
+    display: none;
+    top: .75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+    .block img{
+        margin-bottom: 100px;
+        height: 420px;
+    }
+    .main-contact h2{
+        width: auto;
+        margin: 220px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+    .main-contact button{
+        width: auto;
+        position: unset;
+        margin-right: 250px;
+    }
+
+}
+
+
+
+
+
+
+
+
